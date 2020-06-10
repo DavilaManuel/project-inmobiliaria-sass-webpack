@@ -35,3 +35,16 @@
     @include text-center;
     color: rgba($silver, 0.5);
 }
+
+@mixin main-text {
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+@mixin main-text-title {
+    font-weight: initial;
+    font-size: $big;
+    letter-spacing: .3em;
+    line-height: 1.5em;
+}
