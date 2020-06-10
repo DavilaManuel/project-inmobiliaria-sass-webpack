@@ -15,7 +15,4 @@
 
 @mixin absolute-cover {
     @include full;
-    position: absolute;
-    left: 0;
-    right: 0;
 }

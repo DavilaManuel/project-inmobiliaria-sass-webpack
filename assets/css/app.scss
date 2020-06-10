@@ -66,6 +66,7 @@ figure {
 .grid-main-area {
     display: grid;
     margin-top: $big-margin-top;
+    margin-bottom: $big-margin-top;
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas: 
     "title title title title title title title title title"
@@ -92,6 +93,18 @@ figure {
 .container {
     grid-column: span 12;
     padding: $big-padding;
+}
+
+.cover {
+    @include absolute-cover;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+
+    &.parallax {
+        background-image: url(../../public/images/image3.jpg);
+        background-attachment: fixed;
+    }
 }
 
 @media (min-width: 960px) {
