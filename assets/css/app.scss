@@ -69,7 +69,7 @@ figure {
         @include main-text;
         grid-area: title;
 
-        h1 {
+        h1, h2 {
             @include main-text-title;
         }
     }
@@ -109,6 +109,39 @@ figure {
                 font-size: 0.5em;
                 font-weight: 300;
                 margin-top: 6px;
+            }
+        }
+    }
+}
+
+.slider {
+    header {
+        background: $blue;
+        color: white;
+        padding: $big-padding;
+        transform: translateY(40px);
+        width: 90%;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+        h2 {
+            margin: 0;
+        }
+
+        .separator {
+            text-align: right;
+            padding-right: 150px;
+            position: relative;
+            color: white;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 140px;
+                background-color: currentColor;
+                top: .7em;
+                right: 0;
             }
         }
     }
@@ -179,6 +212,16 @@ figure {
 
     .container {
         grid-column: 2 / 12;
+    }
+
+    .slider {
+        align-items: center;
+
+        header {
+            transform: translateX(100px);
+            width: 100%;
+            min-height: 350px;
+        }
     }
 
     .social {
