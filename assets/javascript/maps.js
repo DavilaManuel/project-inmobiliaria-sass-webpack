@@ -1,3 +1,5 @@
+import styles from './maps/styles'
+
 function initMap() {
     const coords = {
         lat: -12.125470,
@@ -6,7 +8,8 @@ function initMap() {
 
     let map = new google.maps.Map(document.getElementById('map'), {
         center: coords,
-        zoom: 16
+        zoom: 16,
+        styles: styles
     })
 
     let marker = new google.maps.Marker({
