@@ -48,3 +48,7 @@
     letter-spacing: .3em;
     line-height: 1.5em;
 }
+
+@mixin transition {
+    transition: all .6s ease-out;
+}

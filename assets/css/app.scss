@@ -115,6 +115,12 @@ figure {
 }
 
 .slider {
+
+    .image {
+        display: flex;
+        align-items: center;
+    }
+
     header {
         background: $blue;
         color: white;
@@ -123,6 +129,8 @@ figure {
         width: 90%;
         box-sizing: border-box;
         margin: 0 auto;
+        z-index: 10;
+        position: relative;
 
         h2 {
             margin: 0;
@@ -144,6 +152,23 @@ figure {
                 right: 0;
             }
         }
+    }
+}
+
+#slider-text-content {
+    @include transition;
+
+    &.hide {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+#slider-image {
+    @include transition;
+
+    &.hide {
+        opacity: 0;
     }
 }
 
