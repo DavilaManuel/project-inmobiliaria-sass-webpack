@@ -6,7 +6,39 @@
     <title>Inmobiliaria</title>
 </head>
 <body>
-    <section>
+    <div class="menu">
+        <img src="./public/svg/menu.svg" alt="Imagen hamburguesa para abrir menú">
+    </div>
+    <div class="menu-screen">
+        <a href="#" class="close">
+            <img src="../public/svg/close.svg" alt="Botón para cerrar menú">
+        </a>
+        <nav>
+            <a href="#home">
+                <span class="main">Home</span>
+                <span>Lorem ipsum dolor</span>
+            </a>
+            <a href="#products">
+                <span class="main">Products</span>
+                <span>Lorem lorem lorem</span>
+            </a>
+            <a href="#mission">
+                <span class="main">Mission</span>
+                <span>Impsum ipsum impsum</span>
+            </a>
+            <a href="#mapa">
+                <span class="main">Location</span>
+                <span>Dolor ipsum lorem</span>
+            </a>
+            <a href="#contact">
+                <span class="main">Contact</span>
+                <span>Dolor ipsum lorem</span>
+            </a>
+        </nav>
+    </div>
+
+    <!--Presentation-->
+    <section id="home">
         <div class="grid">
             <div class="container">
                 <div class="grid-main-area">
@@ -29,6 +61,7 @@
         </div>
     </section>
 
+    <!--Parallax-->
     <section>
         <div class="cover parallax">
             <p>
@@ -40,7 +73,8 @@
         </div>
     </section>
 
-    <section>
+    <!--Sliders-->
+    <section id="#products">
         <div class="grid-main-area slider">
             <div class="text">
                 <div class="controls">
@@ -66,7 +100,8 @@
         </div>
     </section>
 
-    <section>
+    <!--Our Mission-->
+    <section id="mission">
         <div class="grid full-height mission">
             <div class="container">
                 <h2>Our mission</h2>
@@ -80,11 +115,13 @@
         </div>
     </section>
 
-    <section>
+    <!--Map-->
+    <section id="mapa">
         <div id="map"></div>
     </section>
 
-    <section>
+    <!--Contact-->
+    <section id="contact">
         <div class="grid social">
             <div class="container">
                 <p class="title">Contactos</p>
